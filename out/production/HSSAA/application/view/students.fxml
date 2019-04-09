@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.StudentTableController">
+    <children>
+        <Pane prefHeight="97.0" prefWidth="1024.0" style="-fx-background-color: #0091ea;">
+            <children>
+                <Circle fx:id="btnMin" fill="#5eff03" layoutX="975.0" layoutY="18.0" onMouseClicked="#btnMinEvent" radius="12.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+                <Circle fx:id="btnBack" fill="#ff4d05" layoutX="1004.0" layoutY="18.0" onMouseClicked="#btnBackEvent" radius="12.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+                <Text fill="WHITE" layoutX="14.0" layoutY="59.0" stroke="BLACK" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="0.0" text="Students">
+                    <font>
+                        <Font name="Cantarell Extra Bold" size="30.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Button fx:id="btnTblLoadData" layoutX="14.0" layoutY="108.0" mnemonicParsing="false" onAction="#btnTblLoadDataAction" prefHeight="36.0" prefWidth="99.0" text="Load Data" />
+        <Button fx:id="btnTblClearData" layoutX="125.0" layoutY="108.0" mnemonicParsing="false" onAction="#btnTblClearDataAction" prefHeight="36.0" prefWidth="99.0" text="Clear Table" />
+        <TextField fx:id="stdTblSearchBar" layoutX="765.0" layoutY="108.0" onKeyPressed="#stdTblSearchBarAction" prefHeight="36.0" prefWidth="245.0" promptText="Search..." />
+        <TableView fx:id="stdTable" layoutY="154.0" prefHeight="496.0" prefWidth="1024.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="tblStdEnroll" prefWidth="85.0" text="Enroll No." />
+                <TableColumn fx:id="tblStdName" prefWidth="363.0" text="Name" />
+                <TableColumn fx:id="tblStdGender" prefWidth="65.0" text="Gender" />
+                <TableColumn fx:id="tblStdAge" prefWidth="47.0" text="Age" />
+                <TableColumn fx:id="tblStdAadhaarNo" prefWidth="111.0" text="Aadhaar No." />
+                <TableColumn fx:id="tblStdCaste" prefWidth="68.0" text="Caste" />
+                <TableColumn fx:id="tblStdCategory" minWidth="0.0" prefWidth="92.0" text="Category" />
+            <TableColumn fx:id="tblStdClass" prefWidth="84.0" text="Class" />
+            <TableColumn fx:id="tblStdYear" prefWidth="91.0" text="Year" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnTblExportData" layoutX="234.0" layoutY="108.0" mnemonicParsing="false" onAction="#btnTblExportDataAction" prefHeight="36.0" prefWidth="123.0" text="Export to Excel" />
+    </children>
+</AnchorPane>

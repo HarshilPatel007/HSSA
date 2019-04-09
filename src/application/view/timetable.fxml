@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="650.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.1"
+            fx:controller="application.controller.Controller">
+    <children>
+        <Pane prefHeight="97.0" prefWidth="1024.0" style="-fx-background-color: #0091ea;">
+            <children>
+                <Circle fx:id="btnMin" fill="#5eff03" layoutX="975.0" layoutY="18.0" onMouseClicked="#btnMinEvent"
+                        radius="12.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </Circle>
+                <Circle fx:id="btnBack" fill="#ff4d05" layoutX="1004.0" layoutY="18.0" onMouseClicked="#btnBackEvent"
+                        radius="12.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5">
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </Circle>
+                <Text fill="WHITE" layoutX="14.0" layoutY="59.0" stroke="BLACK" strokeLineCap="BUTT"
+                      strokeLineJoin="ROUND" strokeWidth="0.0" text="Schedule">
+                    <font>
+                        <Font name="Cantarell Extra Bold" size="30.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <TabPane layoutX="14.0" layoutY="97.0" prefHeight="553.0" prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE"
+                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <tabs>
+                <Tab text="Create Schedule">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField layoutX="222.0" layoutY="14.0" prefHeight="26.0" prefWidth="218.0"
+                                           promptText="Time : From - To"/>
+                                <DatePicker layoutX="13.0" layoutY="14.0" promptText="From"/>
+                                <DatePicker layoutX="13.0" layoutY="50.0" promptText="To"/>
+                                <TextArea layoutX="450.0" layoutY="13.0" prefHeight="63.0" prefWidth="467.0"
+                                          promptText="Description."/>
+                                <Button layoutX="927.0" layoutY="49.0" mnemonicParsing="false" prefHeight="26.0"
+                                        prefWidth="83.0" text="Add"/>
+                                <TextField layoutX="222.0" layoutY="50.0" prefHeight="26.0" prefWidth="218.0"
+                                           promptText="Who Gonna Perfom This Task?"/>
+                                <Button layoutX="927.0" layoutY="13.0" mnemonicParsing="false" prefHeight="26.0"
+                                        prefWidth="83.0" text="Export"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="View Schedule">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView editable="true" layoutX="14.0" layoutY="60.0" prefHeight="200.0"
+                                           prefWidth="200.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0"
+                                           AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                           AnchorPane.topAnchor="60.0">
+                                    <columns>
+                                        <TableColumn minWidth="0.0" prefWidth="119.0" text="From"/>
+                                        <TableColumn minWidth="0.0" prefWidth="119.0" text="To"/>
+                                        <TableColumn prefWidth="150.0" text="Time"/>
+                                        <TableColumn prefWidth="632.0" text="Description"/>
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.FeesController">
+    <children>
+        <Pane prefHeight="97.0" prefWidth="1024.0" style="-fx-background-color: #0091ea;">
+            <children>
+                <Circle fx:id="btnMin" fill="#5eff03" layoutX="975.0" layoutY="18.0" onMouseClicked="#btnMinEvent" radius="12.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+                <Circle fx:id="btnBack" fill="#ff4d05" layoutX="1004.0" layoutY="18.0" onMouseClicked="#btnBackEvent" radius="12.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="1.5">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Circle>
+                <Text fill="WHITE" layoutX="81.0" layoutY="58.0" stroke="BLACK" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="0.0" text="Fees">
+                    <font>
+                        <Font name="Cantarell Extra Bold" size="30.0" />
+                    </font>
+                </Text>
+            <ImageView fitHeight="84.0" fitWidth="103.0" layoutX="1.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/admission.png" />
+               </image>
+            </ImageView>
+            </children>
+        </Pane>
+        <Pane layoutY="97.0" prefHeight="554.0" prefWidth="1024.0" style="-fx-background-color: #e0e0e0;">
+         <children>
+            <TabPane prefHeight="554.0" prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="fees collection">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="stdNameBox" layoutX="14.0" layoutY="12.0" prefHeight="26.0" prefWidth="479.0" promptText="Full Name Of Student" />
+                              <TextField fx:id="stdFatherNameBox" layoutX="14.0" layoutY="47.0" prefHeight="26.0" prefWidth="479.0" promptText="Full Name Of Studen's Father" />
+                              <TextField fx:id="stdAadhaarBox" layoutX="14.0" layoutY="83.0" prefHeight="26.0" prefWidth="234.0" promptText="Aadhaar Card No." />
+                              <TextField fx:id="stdEmailBox" layoutX="259.0" layoutY="83.0" prefHeight="26.0" prefWidth="234.0" promptText="Email Address" />
+                              <TextField fx:id="stdAcademicYearBox" layoutX="259.0" layoutY="118.0" prefHeight="26.0" prefWidth="120.0" promptText="academic year" />
+                              <TextField fx:id="stdClassBox" layoutX="388.0" layoutY="118.0" prefHeight="26.0" prefWidth="105.0" promptText="class" />
+                              <Button fx:id="feesStdLoadBtn" layoutX="389.0" layoutY="154.0" mnemonicParsing="false" onAction="#feesStdLoadBtnAction" prefHeight="26.0" prefWidth="103.0" text="Load" />
+                              <TextField fx:id="stdEnrollNoBox" layoutX="259.0" layoutY="154.0" prefHeight="26.0" prefWidth="120.0" promptText="Enroll Number" />
+                              <Line endX="-100.0" endY="-177.0" layoutX="605.0" layoutY="177.0" startX="-100.0" startY="344.0" />
+                              <Button fx:id="feesResetBtn" layoutX="864.0" layoutY="481.0" mnemonicParsing="false" onAction="#feesResetBtnAction" prefHeight="26.0" prefWidth="63.0" text="Re-Set" />
+                              <Button fx:id="feesSubmitBtn" layoutX="945.0" layoutY="442.0" mnemonicParsing="false" onAction="#feesSubmitBtnAction" text="Submit" />
+                              <Button fx:id="feesPrintBtn" layoutX="947.0" layoutY="481.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="63.0" text="Print" />
+                              <ImageView fx:id="imageView" fitHeight="291.0" fitWidth="197.0" layoutX="14.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" />
+                              <Button fx:id="feesResetBtn1" layoutX="430.0" layoutY="189.0" mnemonicParsing="false" onAction="#feesResetBtn1Action" text="Re-Set" />
+                              <TextField fx:id="stdEnrollNoBox1" layoutX="737.0" layoutY="442.0" prefHeight="26.0" prefWidth="120.0" promptText="Enroll Number" />
+                              <TextField fx:id="feesYesNoBox" layoutX="737.0" layoutY="481.0" prefHeight="26.0" prefWidth="120.0" promptText="YES/Term" />
+                              <TextField fx:id="Admsnfees" layoutX="519.0" layoutY="114.0" prefHeight="26.0" prefWidth="139.0" promptText="Admission Fees" />
+                              <TextField fx:id="term1" layoutX="519.0" layoutY="149.0" prefHeight="26.0" prefWidth="139.0" promptText="Term 1/Jun-Aug." />
+                              <TextField fx:id="term2" layoutX="667.0" layoutY="149.0" prefHeight="26.0" prefWidth="139.0" promptText="Term 2/Sep-Nov." />
+                              <TextField fx:id="term3" layoutX="520.0" layoutY="185.0" prefHeight="26.0" prefWidth="138.0" promptText="Term 3/Dec-Feb." />
+                              <TextField fx:id="term4" layoutX="667.0" layoutY="185.0" prefHeight="26.0" prefWidth="138.0" promptText="Term 4/March-Aprl." />
+                              <TextField fx:id="DevFees" layoutX="667.0" layoutY="114.0" prefHeight="26.0" prefWidth="139.0" promptText="Development Fees" />
+                              <Label layoutX="527.0" layoutY="268.0" text="Total : ">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="511.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note : If student can't pay for all term at a time then just write YES-Term_Name which payed.    ex. : YES-Term1, YES-Term3" wrappingWidth="222.7294921875" />
+                              <TextField fx:id="TotalFeesAmount" disable="true" layoutX="631.0" layoutY="275.0" prefHeight="26.0" prefWidth="138.0" promptText="Total" />
+                              <Button fx:id="feesSubmitBtn1" layoutX="864.0" layoutY="442.0" mnemonicParsing="false" onAction="#feesSubmitBtn1Action" prefHeight="26.0" prefWidth="63.0" text="Load" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: /home/harshil/IdeaProjects/HSSAA/lib/commons-collections4-
+ 4.1.jar /home/harshil/IdeaProjects/HSSAA/lib/mysql-connector-java-8.0
+ .11.jar /home/harshil/IdeaProjects/HSSAA/lib/poi-3.17.jar /home/harsh
+ il/IdeaProjects/HSSAA/lib/poi-ooxml-3.17.jar /home/harshil/IdeaProjec
+ ts/HSSAA/lib/poi-ooxml-schemas-3.17.jar /home/harshil/IdeaProjects/HS
+ SAA/lib/xmlbeans-2.6.0.jar /home/harshil/IdeaProjects/HSSAA/lib/itext
+ pdf-5.5.4.jar
+Main-Class: application.Main
+
