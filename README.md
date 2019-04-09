@@ -1,5 +1,5 @@
 # HSSA
-Higher Secondary Student Admission Application- Buid in JAVA+JavaFX
+Higher Secondary Student Admission Application- Build in JAVA+JavaFX
 
 
 ## College Project for 4th Semester.
