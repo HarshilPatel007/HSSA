@@ -105,10 +105,11 @@
                                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="200.0" stroke="BLACK" strokeType="INSIDE" width="455.0" />
                                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../images/jani.png" />
+                                                <Image url="@../images/blank-user.jpg" />
                                             </image>
                                             <viewport>
-                                                <Rectangle2D height="500.0" minX="400.0" minY="100.0" width="500.0" />
+                                                <!--<Rectangle2D height="500.0" minX="400.0" minY="100.0" width="500.0" />-->
+                                                <Rectangle2D height="1000.0" width="1000.0" />
                                             </viewport>
                                         </ImageView>
                               <Text layoutX="174.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name      :">
@@ -146,12 +147,13 @@
                                 <Group layoutX="14.0" layoutY="287.0">
                                     <children>
                                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="200.0" stroke="BLACK" strokeType="INSIDE" width="455.0" />
-                                        <ImageView fitHeight="167.0" fitWidth="154.0" layoutX="13.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../images/munnu.jpg" />
+                                                <Image url="@../images/blank-user.jpg" />
                                             </image>
                                             <viewport>
-                                                <Rectangle2D height="500.0" minX="600.0" minY="155.0" width="500.0" />
+                                                <!--<Rectangle2D height="500.0" minX="600.0" minY="155.0" width="500.0" />-->
+                                                <Rectangle2D height="1000.0" width="1000.0" />
                                             </viewport>
                                         </ImageView>
                                         <Text layoutX="178.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name      :">
@@ -188,10 +190,10 @@
                                 </Group>
                         <Group layoutX="14.0" layoutY="43.0">
                            <children>
-                                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="200.0" stroke="BLACK" strokeType="INSIDE" width="455.0" />
-                                      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="11.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="200.0" stroke="BLACK" strokeType="INSIDE" width="455.0" />
+                               <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                                           <image>
-                                              <Image url="@../images/me1.jpg" />
+                                              <Image url="@../images/blank-user.jpg" />
                                           </image>
                                           <viewport>
                                               <Rectangle2D height="1000.0" width="1000.0" />
@@ -232,12 +234,13 @@
                         <Group layoutX="555.0" layoutY="287.0">
                            <children>
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="200.0" stroke="BLACK" strokeType="INSIDE" width="455.0" />
-                              <ImageView fitHeight="167.0" fitWidth="154.0" layoutX="13.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                               <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/hasit.jpg" />
+                                    <Image url="@../images/blank-user.jpg" />
                                  </image>
                                  <viewport>
-                                    <Rectangle2D height="500.0" minX="140.0" minY="80.0" width="500.0" />
+                                    <!--<Rectangle2D height="500.0" minX="140.0" minY="80.0" width="500.0" />-->
+                                     <Rectangle2D height="1000.0" width="1000.0" />
                                  </viewport>
                               </ImageView>
                               <Text layoutX="178.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name      :">
